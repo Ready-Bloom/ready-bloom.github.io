@@ -121,6 +121,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
                         'cookies' => array()
                     );
                      
+                    // TODO: ADD PROD URL AND EISING APIKEY
                     $response = wp_remote_post( 'https://1a918a0c.ngrok.io/api/v1/rate/getrate', $args );
 
                     $cost = json_decode($response['body'])->{'data'};
