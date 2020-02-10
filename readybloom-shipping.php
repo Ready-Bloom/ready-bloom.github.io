@@ -120,9 +120,10 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
                         'headers' => array(),
                         'cookies' => array()
                     );
-                     
+                    
+                    $url = 'https://ready-bloom.firebaseapp.com/api/v1/order/woocommerce/create?access_token={YOUR_ACCESS_TOKEN}';
                     // TODO: ADD PROD URL AND EISING APIKEY
-                    $response = wp_remote_post( 'https://1a918a0c.ngrok.io/api/v1/rate/getrate', $args );
+                    $response = wp_remote_post( $url, $args );
 
                     $cost = json_decode($response['body'])->{'data'};
                     $rate = array(
@@ -130,8 +131,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
                         'label' => $this->title,
                         'cost' => $cost
                     );
-                        
-                    $this->add_rate( $rate );
+                    if ($cost != null) {
+                        $this->add_rate( $rate );
+                    }
                 }
             }
         }
