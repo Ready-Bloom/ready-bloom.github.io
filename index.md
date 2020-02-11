@@ -64,3 +64,7 @@ Add the following information in the form fields:
 
 
 ** - Your `{YOUR_ACCESS_TOKEN}` will most likely be given to you before you follow this guide. If not, [contact us](mailto:info@readybloom.ca).
+
+Click ***Save webhook***.
+
+Done! We are excited to deliver for you 🎉
