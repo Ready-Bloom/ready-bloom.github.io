@@ -46,18 +46,19 @@
 <p>From here, you will be able to change what your customers see at checkout, defualt is <strong>Ready Bloom Shipping</strong>. You also have the option to disable the shipping method. If you do this, please let us know.</p>
 <h2 id="subscribe-to-woocommerce-webhook">Subscribe to WooCommerce Webhook</h2>
 <h3 id="what-it-does-1">What it Does</h3>
-<p>You will need to subscribe to the WooCommerce webhook <code>Order updated</code>. This allows <strong>Ready Bloom</strong> check if the order is fulfilled on your end. If the status of the order is changed to <code>Completed</code>, <strong>Ready Bloom</strong> will start the delivery process.</p>
+<p>You will need to subscribe to the WooCommerce webhook <code>Order updated</code>. This allows <strong>Ready Bloom</strong> to check if the order is fulfilled on your end. If the status of the order is changed to <code>Completed</code>, <strong>Ready Bloom</strong> will start the delivery process.</p>
 <h3 id="instructions">Instructions</h3>
 <p>In your WooCommerce dashboard, navigate to:</p>
 <p><code>Settings --&gt; Advanced</code></p>
 <p>Click on <em><strong>Webhooks</strong></em> and then <em><strong>Add webhook</strong></em>.</p>
-<p>Add the folling information in the form fields:</p>
+<p>Add the following information in the form fields:</p>
 <p><code>Name</code> --&gt; <code>Ready Bloom Order</code><br>
 <code>Status</code> --&gt; <code>Active</code><br>
 <code>Topic</code> --&gt; <code>Order updated</code><br>
-<code>Delivery URL</code> --&gt; <code>https://ready-bloom.firebaseapp.com/api/v1/order/woocommerce/create?access_token={YOUR_ACCESS_TOKEN}</code><br>
+<code>Delivery URL</code> --&gt; <code>https://ready-bloom.firebaseapp.com/api/v1/order/woocommerce/create?access_token={YOUR_ACCESS_TOKEN}</code>**<br>
 <code>Secret</code> --&gt; Leave Empty<br>
 <code>API Version</code> --&gt; <code>WP REST API Integration v3</code></p>
+<p>** - Your <code>{YOUR_ACCESS_TOKEN}</code> will most likely be given to you before you follow this guide. If not, <a href="info@readybloom.ca">contact us</a>.</p>
 
     </body>
     </html>

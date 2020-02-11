@@ -43,7 +43,7 @@ From here, you will be able to change what your customers see at checkout, defua
 
 ### What it Does
 
-You will need to subscribe to the WooCommerce webhook `Order updated`. This allows **Ready Bloom** check if the order is fulfilled on your end. If the status of the order is changed to `Completed`, **Ready Bloom** will start the delivery process.
+You will need to subscribe to the WooCommerce webhook `Order updated`. This allows **Ready Bloom** to check if the order is fulfilled on your end. If the status of the order is changed to `Completed`, **Ready Bloom** will start the delivery process.
 
 ### Instructions
 
@@ -53,11 +53,14 @@ In your WooCommerce dashboard, navigate to:
 
 Click on ***Webhooks*** and then ***Add webhook***.
 
-Add the folling information in the form fields:
+Add the following information in the form fields:
 
 `Name` --> `Ready Bloom Order`  
 `Status` --> `Active`  
 `Topic` --> `Order updated`  
-`Delivery URL` --> `https://ready-bloom.firebaseapp.com/api/v1/order/woocommerce/create?access_token={YOUR_ACCESS_TOKEN}`  
+`Delivery URL` --> `https://ready-bloom.firebaseapp.com/api/v1/order/woocommerce/create?access_token={YOUR_ACCESS_TOKEN}`**  
 `Secret` --> Leave Empty  
 `API Version` --> `WP REST API Integration v3`  
+
+
+** - Your `{YOUR_ACCESS_TOKEN}` will most likely be given to you before you follow this guide. If not, [contact us](info@readybloom.ca).
