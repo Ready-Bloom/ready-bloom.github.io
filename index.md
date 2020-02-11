@@ -63,4 +63,4 @@ Add the following information in the form fields:
 `API Version` --> `WP REST API Integration v3`  
 
 
-** - Your `{YOUR_ACCESS_TOKEN}` will most likely be given to you before you follow this guide. If not, [contact us](info@readybloom.ca).
+** - Your `{YOUR_ACCESS_TOKEN}` will most likely be given to you before you follow this guide. If not, [contact us](mailto:info@readybloom.ca).
